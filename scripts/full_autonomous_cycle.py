@@ -26,6 +26,53 @@ ATR_STOP_MULTIPLIER = 2.0
 MIN_RR_RATIO = 2.0
 CORRELATION_THRESHOLD = 0.7
 
+# ===== ML MODEL v3 (64.3% accuracy — RELIABLE) =====
+ML_MODEL_FILE = "C:/Users/bravo-usr1/Desktop/OuroTaurus Trade Firm/zeus_model_v3.pkl"
+
+def load_ml_model():
+    try:
+        import pickle
+        with open(ML_MODEL_FILE, 'rb') as f:
+            data = pickle.load(f)
+        return data
+    except:
+        return None
+
+def ml_predict(model, symbol, direction, amount, broker):
+    if not model:
+        return None
+    try:
+        def is_forex(s): return s in {"EURUSD","GBPUSD","USDJPY","USDCHF","AUDUSD","USDCAD","NZDUSD","EURGBP","EURJPY","GBPJPY","AUDJPY","AUDNZD","EURAUD","EURCAD","GBPAUD","GBPCAD","NZDJPY","CADJPY","EURCHF","CHFJPY","GBPNZD"}
+        def is_crypto(s): return s in {"BTCUSD","ETHUSD","SOLUSD","AVAXUSD","LINKUSD","MATICUSD","NEARUSD","ZECUSD","ATOMUSD","UNIUSD","DOTUSD","XRPUSD","ADAUSD","LTCUSD","ICPUSD","XTZUSD","XNGUSD","BNBUSD","BCHUSD","XLMUSD"}
+        def is_metals(s): return s in {"XAUUSD","XAGUSD","XPTUSD"}
+        def is_indices(s): return s in {"US500","US30","USTEC","JP225","US500.cash"}
+        def is_energy(s): return s in {"WTI_V6_CFD","XTIUSD","XBRUSD"}
+        
+        if is_crypto(symbol): pos_val = 1000.0 * amount
+        elif is_forex(symbol): pos_val = 100000.0 * amount
+        elif is_metals(symbol): pos_val = 100.0 * 4280.0 * amount
+        else: pos_val = 100.0 * amount
+        
+        xi = [
+            min(pos_val / 5000.0, 1.0),
+            1.0 if direction == "BUY" else 0.0,
+            1.0 if is_crypto(symbol) else 0.0,
+            1.0 if is_forex(symbol) else 0.0,
+            1.0 if is_metals(symbol) else 0.0,
+            1.0 if is_indices(symbol) else 0.0,
+            1.0 if is_energy(symbol) else 0.0,
+            1.0 if broker == "IC Markets" else 0.0,
+        ]
+        import math
+        z = sum(w*x for w,x in zip(model["weights"], xi)) + model["bias"]
+        prob = 1.0 / (1.0 + math.exp(-max(-500, min(500, z))))
+        return prob
+    except:
+        return None
+
+# Load ML model once at module load
+_ml_model = load_ml_model()
+
 # ===== V3 LOSER RULES =====
 CRYPTO_ALT_SHORT_BLACKLIST = {"UNIUSD", "ICPUSD", "XNGUSD", "DOTUSD", "XTZUSD", "ATOMUSD"}
 DXY_SHORT_FILTER_PCT = 100.0
