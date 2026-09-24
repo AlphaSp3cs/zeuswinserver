@@ -1,0 +1,557 @@
+{
+  "timestamp": "2026-09-24T12:31:44.982475",
+  "btc_options": {
+    "source": "deribit",
+    "timestamp": "2026-09-24T12:32:00.277270",
+    "put_call_oi_ratio": 0.611,
+    "put_call_volume_ratio": 0.823,
+    "put_oi": 191232.30000000008,
+    "call_oi": 312826.2999999998,
+    "total_oi": 504058.59999999986,
+    "total_volume": 50468.59999999998,
+    "top_strikes": [
+      {
+        "instrument": "BTC-30OCT26-95000-C",
+        "oi": 23294.8,
+        "volume": 17.3
+      },
+      {
+        "instrument": "BTC-30OCT26-90000-C",
+        "oi": 19641.3,
+        "volume": 4245.9
+      },
+      {
+        "instrument": "BTC-30OCT26-100000-C",
+        "oi": 12858.8,
+        "volume": 8.8
+      },
+      {
+        "instrument": "BTC-25DEC26-80000-C",
+        "oi": 8715.3,
+        "volume": 105.2
+      },
+      {
+        "instrument": "BTC-25SEP26-70000-C",
+        "oi": 8107.9,
+        "volume": 842.3
+      }
+    ],
+    "max_pain_proxy": "BTC-30OCT26-95000-C",
+    "avg_put_iv": 49.8,
+    "avg_call_iv": 49.8,
+    "iv_skew": -0.0
+  },
+  "fred_macro": {
+    "source": "FRED",
+    "timestamp": "2026-09-24T12:31:44.982475",
+    "2Y": {
+      "value": "4.71",
+      "date": "2026-09-22"
+    },
+    "10Y": {
+      "value": "4.96",
+      "date": "2026-09-22"
+    },
+    "30Y": {
+      "value": "5.29",
+      "date": "2026-09-22"
+    },
+    "SOFR": {
+      "value": "3.87",
+      "date": "2026-09-23"
+    },
+    "EFFR": {
+      "value": "3.88",
+      "date": "2026-09-23"
+    },
+    "HY_OAS": {
+      "value": "2.73",
+      "date": "2026-09-23"
+    },
+    "TED": {
+      "value": "0.09",
+      "date": "2022-01-21"
+    },
+    "DXY": {
+      "value": "119.5133",
+      "date": "2026-09-18"
+    },
+    "T10Y2Y": {
+      "value": "0.26",
+      "date": "2026-09-23"
+    }
+  },
+  "crypto": {
+    "source": "coingecko",
+    "timestamp": "2026-09-24T12:31:49.537433",
+    "coins": {
+      "BTC": {
+        "price": 84274,
+        "change_24h": 0.27447317395592147,
+        "volume_24h": 38530994643.070435
+      },
+      "ETH": {
+        "price": 2680.38,
+        "change_24h": 0.686314055501903,
+        "volume_24h": 14060895153.031216
+      },
+      "SOL": {
+        "price": 117.06,
+        "change_24h": 2.489884007285925,
+        "volume_24h": 4215951268.2084
+      },
+      "XRP": {
+        "price": 1.54,
+        "change_24h": 2.5827858629960745,
+        "volume_24h": 4351297844.841293
+      },
+      "ADA": {
+        "price": 0.247714,
+        "change_24h": 3.6037210884001345,
+        "volume_24h": 568408014.0036396
+      },
+      "DOGE": {
+        "price": 0.096091,
+        "change_24h": 4.037409353606629,
+        "volume_24h": 1273688252.036049
+      },
+      "LTC": {
+        "price": 73.72,
+        "change_24h": 21.785127296522397,
+        "volume_24h": 1629011566.8807302
+      },
+      "DOT": {
+        "price": 1.16,
+        "change_24h": 5.766896964846295,
+        "volume_24h": 184371430.6627095
+      },
+      "AVAX": {
+        "price": 10.38,
+        "change_24h": 0.5601518076230115,
+        "volume_24h": 465978790.6103174
+      },
+      "MATIC": {
+        "price": 0.126156,
+        "change_24h": null,
+        "volume_24h": 0.1467512993353006
+      },
+      "LINK": {
+        "price": 12.94,
+        "change_24h": 5.391091872151911,
+        "volume_24h": 511596248.78400326
+      },
+      "UNI": {
+        "price": 9.26,
+        "change_24h": 0.5798691272974597,
+        "volume_24h": 1090152694.574123
+      },
+      "ATOM": {
+        "price": 1.78,
+        "change_24h": 2.910305990427722,
+        "volume_24h": 61971829.06572101
+      },
+      "ARB": {
+        "price": 0.219112,
+        "change_24h": -2.6722001679290277,
+        "volume_24h": 316677101.099831
+      },
+      "FIL": {
+        "price": 1.007,
+        "change_24h": 7.230342246413048,
+        "volume_24h": 176624145.76689163
+      },
+      "ICP": {
+        "price": 3.14,
+        "change_24h": 7.231794039078811,
+        "volume_24h": 106711628.01335043
+      },
+      "XLM": {
+        "price": 0.211196,
+        "change_24h": 3.947923847042594,
+        "volume_24h": 314668047.292891
+      },
+      "ALGO": {
+        "price": 0.113377,
+        "change_24h": 7.494709574086467,
+        "volume_24h": 55081497.250759095
+      },
+      "FTM": {
+        "price": 0.04523838,
+        "change_24h": 1.0815978818723835,
+        "volume_24h": 618.2845877546094
+      },
+      "APT": {
+        "price": 0.829386,
+        "change_24h": 7.107717139543736,
+        "volume_24h": 90005069.73855583
+      },
+      "SUI": {
+        "price": 1.019,
+        "change_24h": 5.562398770028247,
+        "volume_24h": 776413052.0290122
+      },
+      "NEAR": {
+        "price": 4.69,
+        "change_24h": 7.451580820270773,
+        "volume_24h": 1611056381.6022332
+      }
+    }
+  },
+  "futures": [
+    {
+      "symbol": "CL=F",
+      "price": 94.75,
+      "change_24h": 2.81,
+      "source": "yahoo",
+      "name": "WTI"
+    },
+    {
+      "symbol": "BZ=F",
+      "price": 106.3,
+      "change_24h": 3.12,
+      "source": "yahoo",
+      "name": "Brent"
+    },
+    {
+      "symbol": "NG=F",
+      "price": 3.362,
+      "change_24h": 11.21,
+      "source": "yahoo",
+      "name": "NatGas"
+    },
+    {
+      "symbol": "GC=F",
+      "price": 4299.3,
+      "change_24h": -0.44,
+      "source": "yahoo",
+      "name": "Gold"
+    },
+    {
+      "symbol": "SI=F",
+      "price": 64.035,
+      "change_24h": -0.54,
+      "source": "yahoo",
+      "name": "Silver"
+    },
+    {
+      "symbol": "PL=F",
+      "price": 1750.6,
+      "change_24h": 0.28,
+      "source": "yahoo",
+      "name": "Platinum"
+    },
+    {
+      "symbol": "HG=F",
+      "price": 6.784,
+      "change_24h": 1.59,
+      "source": "yahoo",
+      "name": "Copper"
+    },
+    {
+      "symbol": "ZB=F",
+      "price": 105.375,
+      "change_24h": -0.47,
+      "source": "yahoo",
+      "name": "30Y"
+    },
+    {
+      "symbol": "ZN=F",
+      "price": 104.89063,
+      "change_24h": -0.13,
+      "source": "yahoo",
+      "name": "10Y"
+    },
+    {
+      "symbol": "ZF=F",
+      "price": 103.53125,
+      "change_24h": -0.28,
+      "source": "yahoo",
+      "name": "5Y"
+    },
+    {
+      "symbol": "ZT=F",
+      "price": 101.64063,
+      "change_24h": -0.27,
+      "source": "yahoo",
+      "name": "2Y"
+    },
+    {
+      "symbol": "ES=F",
+      "price": 7768.25,
+      "change_24h": -0.05,
+      "source": "yahoo",
+      "name": "SPX"
+    },
+    {
+      "symbol": "NQ=F",
+      "price": 30743.75,
+      "change_24h": -0.07,
+      "source": "yahoo",
+      "name": "Nasdaq"
+    },
+    {
+      "symbol": "YM=F",
+      "price": 51716.0,
+      "change_24h": -0.3,
+      "source": "yahoo",
+      "name": "Dow"
+    },
+    {
+      "symbol": "RTY=F",
+      "price": 2850.5,
+      "change_24h": -0.34,
+      "source": "yahoo",
+      "name": "Russell"
+    },
+    {
+      "symbol": "ZC=F",
+      "price": 527.25,
+      "change_24h": -0.33,
+      "source": "yahoo",
+      "name": "Corn"
+    },
+    {
+      "symbol": "ZS=F",
+      "price": 1314.0,
+      "change_24h": -0.3,
+      "source": "yahoo",
+      "name": "Soybeans"
+    },
+    {
+      "symbol": "CT=F",
+      "price": 83.36,
+      "change_24h": 5.64,
+      "source": "yahoo",
+      "name": "Cotton"
+    },
+    {
+      "symbol": "SB=F",
+      "price": 18.63,
+      "change_24h": 4.96,
+      "source": "yahoo",
+      "name": "Sugar"
+    },
+    {
+      "symbol": "CC=F",
+      "price": 5595.0,
+      "change_24h": 1.21,
+      "source": "yahoo",
+      "name": "Cocoa"
+    },
+    {
+      "symbol": "KC=F",
+      "price": 276.5,
+      "change_24h": 0.22,
+      "source": "yahoo",
+      "name": "Coffee"
+    },
+    {
+      "symbol": "LE=F",
+      "price": 222.05,
+      "change_24h": 0.51,
+      "source": "yahoo",
+      "name": "LiveCattle"
+    },
+    {
+      "symbol": "HE=F",
+      "price": 69.575,
+      "change_24h": -12.9,
+      "source": "yahoo",
+      "name": "LeanHogs"
+    }
+  ],
+  "forex": [
+    {
+      "symbol": "EURUSD=X",
+      "price": 1.1377,
+      "change_24h": -0.62,
+      "source": "yahoo",
+      "name": "EUR/USD"
+    },
+    {
+      "symbol": "GBPUSD=X",
+      "price": 1.3223,
+      "change_24h": -0.9,
+      "source": "yahoo",
+      "name": "GBP/USD"
+    },
+    {
+      "symbol": "USDJPY=X",
+      "price": 158.845,
+      "change_24h": 0.88,
+      "source": "yahoo",
+      "name": "USD/JPY"
+    },
+    {
+      "symbol": "USDCHF=X",
+      "price": 0.8281,
+      "change_24h": 0.89,
+      "source": "yahoo",
+      "name": "USD/CHF"
+    },
+    {
+      "symbol": "AUDUSD=X",
+      "price": 0.7021,
+      "change_24h": -1.28,
+      "source": "yahoo",
+      "name": "AUD/USD"
+    },
+    {
+      "symbol": "USDCAD=X",
+      "price": 1.4138,
+      "change_24h": 0.51,
+      "source": "yahoo",
+      "name": "USD/CAD"
+    },
+    {
+      "symbol": "USDTRY=X",
+      "price": 48.8502,
+      "change_24h": 0.03,
+      "source": "yahoo",
+      "name": "USD/TRY"
+    },
+    {
+      "symbol": "USDZAR=X",
+      "price": 16.4268,
+      "change_24h": 1.64,
+      "source": "yahoo",
+      "name": "USD/ZAR"
+    },
+    {
+      "symbol": "USDBRL=X",
+      "price": 5.1913,
+      "change_24h": 1.79,
+      "source": "yahoo",
+      "name": "USD/BRL"
+    },
+    {
+      "symbol": "USDMXN=X",
+      "price": 17.669,
+      "change_24h": 2.22,
+      "source": "yahoo",
+      "name": "USD/MXN"
+    },
+    {
+      "symbol": "USDINR=X",
+      "price": 95.97,
+      "change_24h": 0.29,
+      "source": "yahoo",
+      "name": "USD/INR"
+    },
+    {
+      "symbol": "USDKRW=X",
+      "price": 1367.05,
+      "change_24h": 1.24,
+      "source": "yahoo",
+      "name": "USD/KRW"
+    },
+    {
+      "symbol": "USDCNY=X",
+      "price": 6.7028,
+      "change_24h": 0.05,
+      "source": "yahoo",
+      "name": "USD/CNY"
+    },
+    {
+      "symbol": "USDRUB=X",
+      "price": 84.785,
+      "change_24h": 0.64,
+      "source": "yahoo",
+      "name": "USD/RUB"
+    },
+    {
+      "symbol": "DX-Y.NYB",
+      "price": 101.272,
+      "change_24h": 0.17,
+      "source": "yahoo",
+      "name": "DXY"
+    }
+  ],
+  "intl_equities": [
+    {
+      "symbol": "^STOXX50E",
+      "price": 6272.5,
+      "change_24h": -0.43,
+      "source": "yahoo",
+      "name": "EuroStoxx50"
+    },
+    {
+      "symbol": "^N225",
+      "price": 65513.99,
+      "change_24h": 0.76,
+      "source": "yahoo",
+      "name": "Nikkei225"
+    },
+    {
+      "symbol": "^HSI",
+      "price": 24761.13,
+      "change_24h": -0.29,
+      "source": "yahoo",
+      "name": "HangSeng"
+    },
+    {
+      "symbol": "000001.SS",
+      "price": 3888.374,
+      "change_24h": -1.22,
+      "source": "yahoo",
+      "name": "CSI300"
+    },
+    {
+      "symbol": "^KS11",
+      "price": 7080.92,
+      "change_24h": 1.04,
+      "source": "yahoo",
+      "name": "KOSPI"
+    },
+    {
+      "symbol": "^AXJO",
+      "price": 8702.0,
+      "change_24h": -0.72,
+      "source": "yahoo",
+      "name": "ASX200"
+    },
+    {
+      "symbol": "^FTSE",
+      "price": 10679.99,
+      "change_24h": -0.24,
+      "source": "yahoo",
+      "name": "FTSE100"
+    },
+    {
+      "symbol": "^GDAXI",
+      "price": 25266.53,
+      "change_24h": -0.57,
+      "source": "yahoo",
+      "name": "DAX"
+    },
+    {
+      "symbol": "^FCHI",
+      "price": 8081.43,
+      "change_24h": -0.52,
+      "source": "yahoo",
+      "name": "CAC40"
+    },
+    {
+      "symbol": "^MXX",
+      "price": 64011.17,
+      "change_24h": -0.41,
+      "source": "yahoo",
+      "name": "IPC Mexico"
+    }
+  ],
+  "options_pc": {
+    "source": "cboe",
+    "timestamp": "2026-09-24T12:32:00.464853",
+    "date": "6/7/2012",
+    "call": "1448501",
+    "put": "1783495",
+    "total": "3231996",
+    "pc_ratio": "1.23"
+  },
+  "etf_flows": {
+    "source": "farside",
+    "timestamp": "2026-09-24T12:32:00.527374",
+    "date": "08 Sep 2026",
+    "total_flow": "(46.6)"
+  }
+}

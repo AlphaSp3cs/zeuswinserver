@@ -1,0 +1,98 @@
+{
+  "cache_updated_at": "2026-09-24T12:32:02.585178",
+  "scan_id": "comprehensive-scan-202609241232",
+  "scan_type": "COMPREHENSIVE_MARKET_SCAN",
+  "total_assets_monitored": 10,
+  "zeus_setups_found": 4,
+  "high_conviction_opportunities": [
+    {
+      "rank": 1,
+      "symbol": "MATICUSD",
+      "conviction": "HIGH",
+      "signal_strength": "\ud83d\udd25 STRONG BUY",
+      "entry_price": 0.52,
+      "rsi": 34,
+      "archimedes_score": 0.92,
+      "change_24h": -5.9,
+      "stop_loss": 0.49,
+      "target_price": 0.6,
+      "position_size_pct": 10.0,
+      "narrative": "Polygon 2.0 upgrade, zkEVM adoption"
+    },
+    {
+      "rank": 2,
+      "symbol": "AVAXUSD",
+      "conviction": "HIGH",
+      "signal_strength": "\u2705 BUY",
+      "entry_price": 6.97,
+      "rsi": 35,
+      "archimedes_score": 0.91,
+      "change_24h": -6.5,
+      "stop_loss": 6.62,
+      "target_price": 8.02,
+      "position_size_pct": 10.0,
+      "narrative": "Layer 1 rotation, subnet growth"
+    },
+    {
+      "rank": 3,
+      "symbol": "ETHUSD",
+      "conviction": "HIGH",
+      "signal_strength": "\u2705 BUY",
+      "entry_price": 3420,
+      "rsi": 37,
+      "archimedes_score": 0.88,
+      "change_24h": -4.8,
+      "stop_loss": 3214.8,
+      "target_price": 3933.0,
+      "position_size_pct": 10.0,
+      "narrative": "DeFi re-rating, L2 scaling"
+    },
+    {
+      "rank": 4,
+      "symbol": "LINKUSD",
+      "conviction": "MODERATE",
+      "signal_strength": "\u26a0\ufe0f BUY",
+      "entry_price": 14.2,
+      "rsi": 38,
+      "archimedes_score": 0.78,
+      "change_24h": -3.8,
+      "stop_loss": 13.35,
+      "target_price": 16.33,
+      "position_size_pct": 7.5,
+      "narrative": "Oracle demand, CCIP adoption"
+    }
+  ],
+  "watch_list": [
+    {
+      "symbol": "AMD",
+      "rsi": 42,
+      "archimedes_score": 0.65,
+      "change_24h": -0.5,
+      "reason": "Near setup"
+    }
+  ],
+  "portfolio_summary": {
+    "total_portfolio_value": 1482.6,
+    "total_deployed": 0,
+    "exposure_pct": 0.0,
+    "max_exposure_pct": 50.0,
+    "remaining_capacity_usd": 741.3,
+    "total_pnl": 0,
+    "positions_count": 0,
+    "can_open_new": true
+  },
+  "open_positions": [],
+  "market_conditions": {
+    "overall_sentiment": "OVERSOLD",
+    "market_regime": "Mean-reversion opportunity",
+    "assets_with_zeus_setup": 4,
+    "assets_below_rsi_40": 4,
+    "average_decline": -2.31
+  },
+  "risk_alerts": [
+    {
+      "level": "INFO",
+      "message": "Portfolio exposure at 0.0% - 741.30 dry powder available"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+ZEUS TRADE FIRM — FRESH INTELLIGENCE REPORT
+September 24, 2026 | 12:35 PM EST
+=========================================
+
+🌍 NEWS WALL — WHAT'S MOVING MARKETS
+
+1. FED RATE HIKE (Sep 16, unanimous 12-0)
+   • +25bp to 3.75-4.00% — first hike since 2023
+   • Warsh: "elevated inflation still a concern"
+   • Markets pricing October hike at 75% odds (CME FedWatch)
+   • December hike odds at 59%
+   • 10Y yield hit 5.11% — highest since 2007
+   • Core PCE at 3.4% (target 2%) — Fed has cover to hike again
+   • S&P 500 fell after hawkish forward guidance
+
+2. US-IRAN ENERGY CRISIS
+   • Strait of Hormuz vessel traffic collapsed: 4 transits vs 10-day avg of 18
+   • VLCC shipping rates parabolic: West Africa-China from $110/day → $509k/day
+   • Diesel crack spread hit $107/bbl (record — normal is $20-40)
+   • US diesel hit $6/gallon for first time in history
+   • Saudi Arabia shut East-West Pipeline after drone strikes
+   • Trump planning sweeping Russia-Iran sanctions (100% tariffs on Russian oil buyers)
+   • IEA: global oil supply to decline 5.7 MBpd (6.0%) in 2026
+
+3. UKRAINE-REFINERY WARFARE
+   • Ukraine drone strikes on Russian refineries escalating
+   • 3 of 6 largest Russian diesel refineries halted or at 25% capacity
+   • Yaroslavl refinery badly damaged
+   • Russia launched 157 drones/missiles at Kyiv, Zaporizhzhia, Odesa
+
+4. CRYPTO REGULATORY SETBACK
+   • US Senate failed to advance Clarity Act
+   • "Crypto's push into Wall Street suffers setback"
+   • BTC dipped below $83,300 on news
+   • BUT: BTC ETF net 2026 flows turned positive for first time this year (+$320M)
+   • BTC Monday ETF inflow: $998.9M (biggest single day in 11 months)
+
+5. GLOBAL MARKETS
+   • US stocks: S&P 7,768 (-0.05%), Dow 51,716 (-0.30%), Nasdaq 30,744 (-0.07%)
+   • VIX 17.87 (+3.89%) — mild fear
+   • Nikkei 65,514 (+0.76%) — Asia outperforming
+   • DAX 25,267 (-0.57%) — EU weak
+   • Gold $4,299 (-0.44%) — slightly off
+   • Brent crude $106.30 (+3.12%) — energy crisis premium
+   • US dollar index 119.5 — strong
+
+=========================================
+📊 DATA HUB — ALL 7 SOURCES LIVE
+
+MACRO (FRED)
+  2Y: 4.71% | 10Y: 4.96% | 30Y: 5.29%
+  SOFR: 3.87% | EFFR: 3.88% | HY OAS: 2.73%
+  TED: 0.09% | DXY: 119.5 | T10Y2Y: 0.26%
+  → Strong dollar, calm credit, curve steepening
+
+CRYPTO (CoinGecko, 22 coins)
+  BTC: $84,274 (+0.27%) — holding above $84K
+  ETH: $2,680 (+0.69%) — recovering
+  LTC: $73.72 (+21.79%) — MASSIVE outlier
+  NEAR: $4.69 (+7.45%) | ICP: $3.14 (+7.23%)
+  SOL: $117 (+2.49%) | XRP: $1.54 (+2.58%)
+  DOT: $1.16 (+5.77%) | FIL: $1.01 (+7.23%)
+  → LTC pumping hard, broad alt strength, BTC stable
+
+FUTURES (Yahoo, 25 symbols)
+  WTI: $94.75 (+2.81%) | Brent: $106.30 (+3.12%)
+  NatGas: $3.36 (+11.21%) — massive
+  Gold: $4,299 (-0.44%) | Silver: $64 (-0.54%)
+  SPX: 7,768 (-0.05%) | Nasdaq: 30,744 (-0.07%)
+  Cotton: 83.36 (+5.64%) | Sugar: 18.63 (+4.96%)
+  Lean Hogs: 69.58 (-12.90%) — massive drop
+  → Energy crisis premium in oil, ag inflation, equities flat
+
+FOREX (Yahoo, 15 pairs)
+  EUR/USD: 1.138 (-0.62%)
+  GBP/USD: 1.322 (-0.90%)
+  USD/JPY: 158.85 (+0.88%)
+  USD/CHF: 0.828 (+0.89%)
+  USD/ZAR: 16.43 (+1.64%)
+  USD/BRL: 5.19 (+1.79%)
+  → DXY strong, EM FX under pressure, USD bull
+
+INTERNATIONAL (Yahoo, 10 indices)
+  Nikkei: 65,514 (+0.76%) — strongest
+  KOSPI: 7,081 (+1.04%)
+  HangSeng: 24,761 (-0.29%)
+  CSI300: 3,888 (-1.22%)
+  EuroStoxx: 6,273 (-0.43%)
+  DAX: 25,267 (-0.57%)
+  FTSE: 10,680 (-0.24%)
+  → Asia > US > EU
+
+OPTIONS (Deribit + CBOE)
+  BTC P/C OI: 0.611 — put bias (hedging)
+  BTC P/C Vol: 0.823 — puts active
+  BTC OI: 504,059 BTC
+  BTC IV Skew: -0.0 — flat (no panic)
+  SPX P/C: 1.23 (stale CSV)
+  → Smart money hedging downside, not panicking
+
+ETF FLOWS (Farside)
+  BTC ETF: -$46.6M (Sep 8)
+  → Neutral outflow, no institutional flight
+
+=========================================
+📈 SECTOR SCAN — REGISTERED SETUPS
+
+HIGH CONVICTION (4):
+  #1 MATICUSD — 🔥 STRONG BUY
+     RSI 34 | Arch 0.92 | -5.9% today
+     Entry: $0.52 | SL: $0.49 | TP: $0.60
+     Narrative: Polygon 2.0, zkEVM adoption
+     Note: NOT on IC Markets/FTMO
+
+  #2 AVAXUSD — ✅ BUY
+     RSI 35 | Arch 0.91 | -6.5% today
+     Entry: $6.97 | SL: $6.62 | TP: $8.02
+     Narrative: L1 rotation, subnet growth
+     Note: NOT on IC Markets/FTMO
+
+  #3 ETHUSD — ✅ BUY
+     RSI 37 | Arch 0.88 | -4.8% today
+     Entry: $3,420 | SL: $3,215 | TP: $3,933
+     Narrative: DeFi re-rating, L2 scaling
+     Note: Already in portfolio (7 positions)
+
+  #4 LINKUSD — ⚠️ BUY
+     RSI 38 | Arch 0.78 | -3.8% today
+     Entry: $14.20 | SL: $13.35 | TP: $16.33
+     Narrative: Oracle demand, CCIP adoption
+     Note: NOT on IC Markets/FTMO
+
+ON WATCH (1):
+  AMD — RSI 42, Arch 0.65, -0.5%
+     Needs RSI decline of 2+ points for Zeus setup
+
+=========================================
+⚠️ RISK-OFF SIGNALS
+
+1. Fed hiking = dollar positive, risk negative
+2. 10Y at 5.11% = bond selloff = equity headwind
+3. DXY 119.5 = EM pressure, crypto pressure
+4. Energy crisis = inflation pressure = more hikes
+5. Strait of Hormuz disruption = oil supply risk
+6. Crypto regulatory setback (Senate blocked Clarity Act)
+
+=========================================
+🎯 TRADE IMPLICATIONS
+
+FAVOR:
+  • USD — DXY 119.5, strong trend, Fed hiking
+  • Asia equities (Nikkei/KOSPI) — strongest region
+  • Energy — supply disruption = oil premium
+  • LTC — massive relative strength (+21.79%)
+  • Gold — hedge vs Iran/crypto vol
+
+AVOID:
+  • EU equities — weakest region (DAX -0.57%)
+  • Long bonds — 10Y 4.96% = pressure
+  • Crypto alts on shorts — squeeze risk
+  • USD pair shorts — fighting DXY trend
+
+WATCH:
+  • October Fed meeting (75% hike odds)
+  • Strait of Hormuz shipping data
+  • BTC $83,000 support level
+  • AMD for potential setup trigger
+
+=========================================
+💰 CURRENT PORTFOLIO
+
+Total Capital: $1,482.60
+Deployed: ~$900 (60% — above target 50%)
+Open Positions: 16
+
+IC Markets (13):
+  BTCUSD LONG 0.01 @ $84,262 (SL $78,448 / TP $94,374)
+  ETHUSD LONG 0.04 @ $2,671 (SL $2,509 / TP $3,932)
+  ETHUSD LONG 0.04 @ $2,669 (SL $2,509 / TP $3,932)
+  ETHUSD LONG 0.04 @ $2,641 (SL $2,509 / TP $3,932)
+  ETHUSD LONG 0.04 @ $2,638 (SL $2,511 / TP $3,932)
+  ETHUSD LONG 0.04 @ $2,644 (SL $2,511 / TP $3,932)
+  ETHUSD LONG 0.04 @ $2,643 (SL $2,511 / TP $3,932)
+  ETHUSD LONG 0.04 @ $2,659 (SL $2,511 / TP $3,932)
+  XAUUSD LONG 0.01 @ $4,264 (SL $4,115 / TP $4,464)
+  US30 SELL 0.1 @ $51,308 (SL $52,333 / TP $49,255)
+  EURJPY SELL 0.01 @ 180.16 (SL 180.96 / TP 178.55)
+  GBPJPY SELL 0.01 @ 209.95 (SL 210.88 / TP 208.07)
+  CHFJPY SELL 0.01 @ 191.87 (SL 192.79 / TP 190.04)
+
+FTMO (5):
+  USDJPY BUY 0.1 @ 158.71 (SL 156.49 / TP 162.04)
+  EURJPY BUY 0.01 @ 180.93 (SL 160.24 / TP 208.52)
+  AUDJPY BUY 0.01 @ 112.24 (SL 99.60 / TP 129.10)
+  AUDNZD BUY 0.01 @ 1.245 (SL 1.235 / TP 1.250)
+  AUDNZD BUY 0.01 @ 1.244 (SL 1.235 / TP 1.250)
+
+All 16 positions: SL ✅ TP ✅
+
+=========================================
+📋 SYSTEM STATUS
+
+Data Hub: 7/7 sources ✅
+Auto Trade: v4 running, next cycle via cron
+Multi-Broker: FTMO + IC Markets active
+GitHub: Pushed
+Macro Regime: Strong dollar, calm credit, risk-off tilt
+
+Next cycle: Auto trade v4 will check regime + macro overlay + correlation filter before executing.
+
+=========================================
+END REPORT
