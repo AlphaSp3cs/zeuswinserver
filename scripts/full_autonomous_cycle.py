@@ -16,12 +16,20 @@ KELLY_FRACTION = 0.25
 DEFAULT_CAPITAL = 1482.60
 MAX_POSITION_PCT = 0.10
 MAX_TOTAL_EXPOSURE = 0.50
-MAX_CORRELATED_RISK = 0.10  # Max 10% total risk from correlated crypto positions
-DRAWDOWN_HALT_PCT = -0.10   # Halt trading if portfolio down 10%
-SIGNAL_MAX_AGE_HOURS = 24   # Reject signals older than 24h
-MIN_WIN_RATE = 0.50         # Kelly requires historical WR >= 50%
+MAX_CORRELATED_RISK = 0.10
+DRAWDOWN_HALT_PCT = -0.10
+SIGNAL_MAX_AGE_HOURS = 24
+MIN_WIN_RATE = 0.50
+MAX_LOSS_PER_TRADE = 30.00
 
-# Historical win rates from backtest data (NOT signal confidence)
+# ===== V3 LOSER RULES (from 278-trade backtest) =====
+# Win rate 38.2%, PF 1.06 — these rules target the 3 loser patterns:
+CRYPTO_ALT_SHORT_BLACKLIST = {"UNIUSD", "ICPUSD", "XNGUSD", "DOTUSD", "XTZUSD", "ATOMUSD"}
+CRYPTO_MAJOR_SHORT_OK = {"BTCUSD", "SOLUSD", "XRPUSD", "ETHUSD", "LTCUSD", "ADAUSD", "LINKUSD", "AVAXUSD", "MATICUSD", "NEARUSD", "BCHUSD"}
+DXY_SHORT_FILTER_PCT = 100.0
+RSI_SHORT_THRESHOLD = 60.0
+
+# ===== HISTORICAL WIN RATES (backtest derived) =====
 HISTORICAL_WIN_RATES = {
     "BTCUSD": 0.547, "ETHUSD": 0.522, "SOLUSD": 0.488,
     "AVAXUSD": 0.512, "LINKUSD": 0.498, "MATICUSD": 0.534,
@@ -87,6 +95,17 @@ try:
             print(f"   BTC ETF flow: {flows['total_flow']}M")
     if stress_alert:
         print(f"   ⚠️ MACRO STRESS DETECTED — reducing position sizes by 50%")
+    # Deribit BTC options PCR overlay
+    from data_hub import fetch_deribit_options
+    btc_opt = fetch_deribit_options()
+    if "put_call_oi_ratio" in btc_opt and btc_opt["put_call_oi_ratio"] is not None:
+        pcr = btc_opt["put_call_oi_ratio"]
+        if pcr > 0.8:
+            print(f"   ⚠️ BTC PCR {pcr} > 0.8 — bearish tilt, reducing long exposure 25%")
+        elif pcr < 0.4:
+            print(f"   ✅ BTC PCR {pcr} < 0.4 — bullish tilt, increasing long exposure 25%")
+        else:
+            print(f"   ➖ BTC PCR {pcr} — neutral options sentiment")
 except Exception as e:
     print(f"   Data hub error: {e} — continuing without macro overlay")
 print()
@@ -188,10 +207,23 @@ print()
 print("PHASE 2: FILTERING BY CONFIDENCE + WIN RATE")
 print("-" * 50)
 
+# Fetch DXY for short filter
+try:
+    from data_hub import fetch_fred_macro
+    try:
+        from fred_key import FRED_KEY as _fk
+        macro_data = fetch_fred_macro(_fk)
+    except ImportError:
+        macro_data = fetch_fred_macro(None)
+    dxy_val = float(macro_data.get("DXY", {}).get("value", 100)) if isinstance(macro_data.get("DXY"), dict) else 100
+except:
+    dxy_val = 100
+
 filtered = []
 for s in signals:
     confidence = s.get("confidence", 0)
     symbol = s.get("symbol", "")
+    action = s.get("action", "BUY")
     hist_wr = HISTORICAL_WIN_RATES.get(symbol, 0.50)
     
     if confidence < CONFIDENCE_THRESHOLD:
@@ -200,6 +232,18 @@ for s in signals:
     if hist_wr < MIN_WIN_RATE:
         print(f"   REJECT {symbol}: historical WR {hist_wr:.3f} < {MIN_WIN_RATE}")
         continue
+    
+    # V3 LOSER RULE 1: No shorts on crypto alts (UNI, ICP, XNG, DOT, XTZ, ATOM)
+    if action == "SELL" and symbol in CRYPTO_ALT_SHORT_BLACKLIST:
+        print(f"   REJECT {symbol} SALT: Blacklisted crypto alt (short squeeze risk)")
+        continue
+    
+    # V3 LOSER RULE 2: Only short USD pairs when DXY < 100
+    usd_pairs = {"EURUSD", "GBPUSD", "USDJPY", "USDCHF", "AUDUSD", "USDCAD", "NZDUSD"}
+    if action == "SELL" and symbol in usd_pairs and dxy_val >= DXY_SHORT_FILTER_PCT:
+        print(f"   REJECT {symbol} SELL: DXY {dxy_val} >= {DXY_SHORT_FILTER_PCT} — USD strong, no short")
+        continue
+    
     filtered.append(s)
 
 filtered.sort(key=lambda x: x.get("confidence", 0), reverse=True)
