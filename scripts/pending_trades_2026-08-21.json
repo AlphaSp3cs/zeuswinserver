@@ -1,0 +1,42 @@
+[
+  {
+    "symbol": "XAUUSD",
+    "direction": "SHORT_SELL",
+    "entry": 4408.44,
+    "sl": 4444.8743,
+    "tp": 4362.8972,
+    "qty": 0,
+    "reason": "market_closed_weekend",
+    "queued_at": "2026-08-21T04:19:15.895927+00:00"
+  },
+  {
+    "symbol": "XAGUSD",
+    "direction": "SHORT_SELL",
+    "entry": 65.296,
+    "sl": 66.2268,
+    "tp": 64.1325,
+    "qty": 0,
+    "reason": "market_closed_weekend",
+    "queued_at": "2026-08-21T04:19:15.914932+00:00"
+  },
+  {
+    "symbol": "XAUUSD",
+    "direction": "SHORT_SELL",
+    "entry": 4400.16,
+    "sl": 4438.7453,
+    "tp": 4351.9284,
+    "qty": 0,
+    "reason": "market_closed_weekend",
+    "queued_at": "2026-08-21T11:56:59.766176+00:00"
+  },
+  {
+    "symbol": "USDJPY",
+    "direction": "SHORT_SELL",
+    "entry": 159.331,
+    "sl": 159.562,
+    "tp": 159.0423,
+    "qty": 0,
+    "reason": "market_closed_weekend",
+    "queued_at": "2026-08-21T19:10:55.340744+00:00"
+  }
+]

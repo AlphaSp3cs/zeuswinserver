@@ -1,0 +1,22 @@
+[
+  {
+    "symbol": "XAUUSD",
+    "direction": "SHORT_SELL",
+    "entry": 4342.0,
+    "sl": 4379.3576,
+    "tp": 4295.3029,
+    "qty": 0,
+    "reason": "market_closed_weekend",
+    "queued_at": "2026-08-17T22:38:58.506069+00:00"
+  },
+  {
+    "symbol": "XAUUSD",
+    "direction": "SHORT_SELL",
+    "entry": 4342.0,
+    "sl": 4379.3576,
+    "tp": 4295.3029,
+    "qty": 0,
+    "reason": "market_closed_weekend",
+    "queued_at": "2026-08-18T02:32:42.791836+00:00"
+  }
+]

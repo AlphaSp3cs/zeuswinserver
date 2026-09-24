@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-08-18T02:32:42.532529+00:00",
+  "broker": "CAPITAL",
+  "session": "CAPITAL_ALL_SECTOR_20260723",
+  "account": {
+    "login": 1028685,
+    "server": "Capital.ComBah-Demo",
+    "terminal": "C:\\Program Files\\Capital.com MetaTrader 5\\terminal64.exe"
+  },
+  "equity": 85.47,
+  "balance": 89.01,
+  "proposed_trades": [
+    {
+      "symbol": "EURUSD",
+      "direction": "SHORT_SELL",
+      "entry": 1.1557,
+      "sl": 1.1578,
+      "tp": 1.1531,
+      "qty": 822.57,
+      "rr": 1.25,
+      "rsi": 58.39,
+      "atr": 0.001,
+      "status": "PROPOSED"
+    },
+    {
+      "symbol": "USDJPY",
+      "direction": "LONG_BUY",
+      "entry": 157.752,
+      "sl": 157.1732,
+      "tp": 158.4755,
+      "qty": 2.95,
+      "rr": 1.25,
+      "rsi": 41.01,
+      "atr": 0.2894,
+      "status": "PROPOSED"
+    }
+  ],
+  "blocked": [
+    {
+      "symbol": "SPX500",
+      "reason": "insufficient_history",
+      "fallback": "insufficient_history"
+    },
+    {
+      "symbol": "NAS100",
+      "reason": "insufficient_history",
+      "fallback": "insufficient_history"
+    },
+    {
+      "symbol": "DE30",
+      "reason": "insufficient_history",
+      "fallback": "insufficient_history"
+    }
+  ],
+  "no_trade_reason": null
+}

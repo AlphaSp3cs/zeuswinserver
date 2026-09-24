@@ -1,0 +1,66 @@
+{
+  "last_tick": "2026-08-13T15:20:13.839698",
+  "now": "2026-08-13T17:22:59.685768",
+  "scans_fired": 3,
+  "protects_fired": 5,
+  "scan_results": [
+    {
+      "label": "SCAN:us_equity_after:equity",
+      "cmd": "python C:\\Users\\bravo-usr1\\Desktop\\OuroTaurus Trade Firm\\scripts\\open_market_scan_20260726.py",
+      "returncode": 2,
+      "stdout_tail": "",
+      "stderr_tail": "python: can't open file 'C:\\\\Users\\\\bravo-usr1\\\\Desktop\\\\OuroTaurus Trade Firm\\\\scripts\\\\open_market_scan_20260726.py': [Errno 2] No such file or directory\n"
+    },
+    {
+      "label": "SCAN:us_equity_after:etf",
+      "cmd": "python C:\\Users\\bravo-usr1\\Desktop\\OuroTaurus Trade Firm\\scripts\\open_market_scan_20260726.py",
+      "returncode": 2,
+      "stdout_tail": "",
+      "stderr_tail": "python: can't open file 'C:\\\\Users\\\\bravo-usr1\\\\Desktop\\\\OuroTaurus Trade Firm\\\\scripts\\\\open_market_scan_20260726.py': [Errno 2] No such file or directory\n"
+    },
+    {
+      "label": "SCAN:fx_sydney:fx",
+      "cmd": "python C:\\Users\\bravo-usr1\\Desktop\\OuroTaurus Trade Firm\\scripts\\all_market_scan_20260726.py",
+      "returncode": 2,
+      "stdout_tail": "",
+      "stderr_tail": "python: can't open file 'C:\\\\Users\\\\bravo-usr1\\\\Desktop\\\\OuroTaurus Trade Firm\\\\scripts\\\\all_market_scan_20260726.py': [Errno 2] No such file or directory\n"
+    }
+  ],
+  "protect_results": [
+    {
+      "label": "PROTECT:us_equity_regular",
+      "cmd": "python C:\\Users\\bravo-usr1\\Desktop\\OuroTaurus Trade Firm\\scripts\\trail_sl_protect_sweep.py",
+      "returncode": 1,
+      "stdout_tail": "PROTECT SWEEP ERROR: all_market_scan output not found\nC:\\Users\\bravo-usr1\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\python.exe: can't open file 'C:\\\\Users\\\\bravo-usr1\\\\Desktop\\\\OuroTaurus Trade Firm\\\\scripts\\\\all_market_scan_20260726.py': [Errno 2] No such file or directory\n\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "PROTECT:cme_index_futures",
+      "cmd": "python C:\\Users\\bravo-usr1\\Desktop\\OuroTaurus Trade Firm\\scripts\\trail_sl_protect_sweep.py",
+      "returncode": 1,
+      "stdout_tail": "PROTECT SWEEP ERROR: all_market_scan output not found\nC:\\Users\\bravo-usr1\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\python.exe: can't open file 'C:\\\\Users\\\\bravo-usr1\\\\Desktop\\\\OuroTaurus Trade Firm\\\\scripts\\\\all_market_scan_20260726.py': [Errno 2] No such file or directory\n\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "PROTECT:cme_commodity_futures",
+      "cmd": "python C:\\Users\\bravo-usr1\\Desktop\\OuroTaurus Trade Firm\\scripts\\trail_sl_protect_sweep.py",
+      "returncode": 1,
+      "stdout_tail": "PROTECT SWEEP ERROR: all_market_scan output not found\nC:\\Users\\bravo-usr1\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\python.exe: can't open file 'C:\\\\Users\\\\bravo-usr1\\\\Desktop\\\\OuroTaurus Trade Firm\\\\scripts\\\\all_market_scan_20260726.py': [Errno 2] No such file or directory\n\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "PROTECT:cbot_treasuries",
+      "cmd": "python C:\\Users\\bravo-usr1\\Desktop\\OuroTaurus Trade Firm\\scripts\\trail_sl_protect_sweep.py",
+      "returncode": 1,
+      "stdout_tail": "PROTECT SWEEP ERROR: all_market_scan output not found\nC:\\Users\\bravo-usr1\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\python.exe: can't open file 'C:\\\\Users\\\\bravo-usr1\\\\Desktop\\\\OuroTaurus Trade Firm\\\\scripts\\\\all_market_scan_20260726.py': [Errno 2] No such file or directory\n\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "PROTECT:fx_newyork",
+      "cmd": "python C:\\Users\\bravo-usr1\\Desktop\\OuroTaurus Trade Firm\\scripts\\trail_sl_protect_sweep.py",
+      "returncode": 1,
+      "stdout_tail": "PROTECT SWEEP ERROR: all_market_scan output not found\nC:\\Users\\bravo-usr1\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\python.exe: can't open file 'C:\\\\Users\\\\bravo-usr1\\\\Desktop\\\\OuroTaurus Trade Firm\\\\scripts\\\\all_market_scan_20260726.py': [Errno 2] No such file or directory\n\n",
+      "stderr_tail": ""
+    }
+  ]
+}

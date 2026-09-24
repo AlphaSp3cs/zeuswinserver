@@ -1,0 +1,22 @@
+# Environment
+.env
+.env.capital2
+.env.bak
+
+# Credentials
+.broker_creds_secure.json
+secrets/
+vault/secrets.enc
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Temp
+workflow/_tmp_*.py
+fred_key.py
+twelve_data_key.py
+fred_key.py
+twelve_data_key.py

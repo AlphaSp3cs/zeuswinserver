@@ -1,0 +1,32 @@
+[
+  {
+    "symbol": "EURUSD",
+    "direction": "SHORT_SELL",
+    "entry": 1.1557,
+    "sl": 1.1578,
+    "tp": 1.1531,
+    "qty": 0,
+    "reason": "market_closed_weekend",
+    "queued_at": "2026-08-16T19:32:08.846936+00:00"
+  },
+  {
+    "symbol": "USDJPY",
+    "direction": "LONG_BUY",
+    "entry": 157.752,
+    "sl": 157.1732,
+    "tp": 158.4755,
+    "qty": 0,
+    "reason": "market_closed_weekend",
+    "queued_at": "2026-08-16T19:32:08.885972+00:00"
+  },
+  {
+    "symbol": "XAUUSD",
+    "direction": "SHORT_SELL",
+    "entry": 4342.0,
+    "sl": 4379.3576,
+    "tp": 4295.3029,
+    "qty": 0,
+    "reason": "market_closed_weekend",
+    "queued_at": "2026-08-16T19:32:44.153885+00:00"
+  }
+]

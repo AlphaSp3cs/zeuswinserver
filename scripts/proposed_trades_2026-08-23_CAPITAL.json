@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-08-23T17:35:56.776044+00:00",
+  "broker": "CAPITAL",
+  "session": "CAPITAL_ALL_SECTOR_20260723",
+  "account": {
+    "login": 0,
+    "server": "",
+    "terminal": "C:\\Program Files\\Capital.com MetaTrader 5\\terminal64.exe"
+  },
+  "equity": 50257.01,
+  "balance": 50261.12,
+  "proposed_trades": [],
+  "blocked": [
+    {
+      "symbol": "SPX500",
+      "reason": "insufficient_history",
+      "fallback": "insufficient_history"
+    },
+    {
+      "symbol": "NAS100",
+      "reason": "insufficient_history",
+      "fallback": "insufficient_history"
+    },
+    {
+      "symbol": "DE30",
+      "reason": "insufficient_history",
+      "fallback": "insufficient_history"
+    }
+  ],
+  "no_trade_reason": "no qualifying setups this tick"
+}

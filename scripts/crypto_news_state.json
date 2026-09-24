@@ -1,0 +1,105 @@
+{
+  "runs": [
+    {
+      "ts": "2026-08-15T03:13:46.565986+00:00",
+      "articles": 130
+    },
+    {
+      "ts": "2026-08-15T03:14:39.604239+00:00",
+      "articles": 130
+    },
+    {
+      "ts": "2026-08-15T03:15:41.234106+00:00",
+      "articles": 130
+    },
+    {
+      "ts": "2026-08-15T03:16:08.541869+00:00",
+      "articles": 135
+    },
+    {
+      "ts": "2026-08-15T12:27:51.233293+00:00",
+      "articles": 130
+    },
+    {
+      "ts": "2026-08-15T15:55:58.995305+00:00",
+      "articles": 135
+    },
+    {
+      "ts": "2026-08-25T01:03:40.277374+00:00",
+      "articles": 133
+    }
+  ],
+  "theme_history": {
+    "stablecoin": {
+      "count": 3,
+      "outlets": [
+        "cointelegraph.com",
+        "cryptoslate.com",
+        "theblock.co"
+      ],
+      "dollars": 2000000000.0,
+      "last_seen": "2026-08-25T01:03:40.277374+00:00"
+    },
+    "etf_flows": {
+      "count": 3,
+      "outlets": [
+        "cointelegraph.com",
+        "cryptoslate.com",
+        "decrypt.co"
+      ],
+      "dollars": 80000.0,
+      "last_seen": "2026-08-25T01:03:40.277374+00:00"
+    },
+    "sanctions_regulatory": {
+      "count": 2,
+      "outlets": [
+        "cryptoslate.com",
+        "theblock.co"
+      ],
+      "dollars": 0,
+      "last_seen": "2026-08-25T01:03:40.277374+00:00"
+    },
+    "upgrade_launch": {
+      "count": 3,
+      "outlets": [
+        "cointelegraph.com",
+        "decrypt.co",
+        "theblock.co"
+      ],
+      "dollars": 2000000000.0,
+      "last_seen": "2026-08-25T01:03:40.277374+00:00"
+    },
+    "coldcard_exploit": {
+      "count": 1,
+      "outlets": [
+        "decrypt.co"
+      ],
+      "dollars": 130000000.0,
+      "last_seen": "2026-08-25T01:03:40.277374+00:00"
+    },
+    "institutional_adopt": {
+      "count": 1,
+      "outlets": [
+        "cointelegraph.com"
+      ],
+      "dollars": 15000000000.0,
+      "last_seen": "2026-08-25T01:03:40.277374+00:00"
+    },
+    "exchange_hack": {
+      "count": 2,
+      "outlets": [
+        "decrypt.co"
+      ],
+      "dollars": 13000000000.0,
+      "last_seen": "2026-08-25T01:03:40.277374+00:00"
+    },
+    "fed_macro": {
+      "count": 1,
+      "outlets": [
+        "decrypt.co"
+      ],
+      "dollars": 80000.0,
+      "last_seen": "2026-08-25T01:03:40.277374+00:00"
+    }
+  }
+}
