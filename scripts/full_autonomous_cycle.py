@@ -279,6 +279,29 @@ if os.path.exists("./paper_trades_log.json"):
             existing_positions[symbol]["value"] += t.get("position_value", 0)
             existing_positions[symbol]["count"] += 1
 
+# CRITICAL: Also count live MT5 positions (paper log is stale)
+try:
+    import MetaTrader5 as mt5
+    for broker, mt5_path in [
+        ("IC Markets", "C:/Program Files/MetaTrader 5 IC Markets Global/terminal64.exe"),
+        ("FTMO", "C:/Program Files/FTMO Global Markets MT5 Terminal/terminal64.exe"),
+    ]:
+        try:
+            if mt5.initialize(path=mt5_path):
+                live_pos = mt5.positions_get()
+                if live_pos:
+                    for p in live_pos:
+                        sym = p.symbol
+                        if sym not in existing_positions:
+                            existing_positions[sym] = {"qty": 0, "value": 0, "count": 0}
+                        existing_positions[sym]["count"] += 1
+                        existing_positions[sym]["qty"] += p.volume
+                mt5.shutdown()
+        except Exception as e:
+            pass
+except ImportError:
+    pass
+
 filtered = []
 for s in signals:
     confidence = s.get("confidence", 0)
@@ -363,8 +386,13 @@ correlated_risk_total = 0.0
 
 for sig in filtered[:MAX_POSITIONS]:
     symbol = sig.get("symbol", "")
-    if existing_positions.get(symbol, {}).get("count", 0) >= MAX_POSITIONS_PER_SYMBOL:
-        print(f"   SKIP {symbol}: Max reached")
+    existing_count = existing_positions.get(symbol, {}).get("count", 0)
+    if existing_count >= MAX_POSITIONS_PER_SYMBOL:
+        print(f"   SKIP {symbol}: Max reached ({existing_count}/{MAX_POSITIONS_PER_SYMBOL})")
+        continue
+    # Safety: also reject if 2+ already open (hard cap)
+    if existing_count >= 2:
+        print(f"   HARD STOP {symbol}: Already {existing_count} open")
         continue
 
     confidence = sig.get("confidence", 0.5)
@@ -455,7 +483,7 @@ if sized_positions:
         action = pos["action"]
         volume = pos["shares"]
         sl_pct = pos.get("stop_loss_pct", 0.03)
-        tp_pct = abs(pos["target_price"] - pos["entry_price"]) / pos["entry_price"] if pos["entry_price"] > 0 else 0.06
+        tp_pct = abs(pos["target_price"] - pos["entry_price"]) / pos["entry_price"] if pos.get("entry_price", 0) > 0 else 0.06
 
         # Check if symbol exists on broker before routing
         pos["routed_broker"] = "unknown"
@@ -492,6 +520,24 @@ if sized_positions:
             pos["status"] = "router_failed"
 
         executed_trades.append(pos)
+
+    # Post-trade SL+TP verification
+    print("\n   VERIFYING SL+TP ON NEW POSITIONS")
+    try:
+        import MetaTrader5 as mt5
+        for broker, mt5_path in [
+            ("IC Markets", "C:/Program Files/MetaTrader 5 IC Markets Global/terminal64.exe"),
+            ("FTMO", "C:/Program Files/FTMO Global Markets MT5 Terminal/terminal64.exe"),
+        ]:
+            if mt5.initialize(path=mt5_path):
+                positions = mt5.positions_get()
+                if positions:
+                    for p in positions:
+                        if p.sl == 0 or p.tp == 0:
+                            print(f"   ⚠️ {broker} {p.symbol}: SL={p.sl} TP={p.tp}")
+                mt5.shutdown()
+    except:
+        pass
 
     if os.path.exists("./paper_trades_log.json"):
         with open("./paper_trades_log.json", 'r') as f:
